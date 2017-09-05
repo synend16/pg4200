@@ -26,8 +26,8 @@ public abstract class MyStackTestTemplate {
     public void testFailToPopOnEmpty(){
 
         try{
-            stack.pop();
-            fail();
+            stack.pop();//Vi forventer en exception her
+            fail();     //Vil kaste en error, vi ville at den skulle feile
         } catch (RuntimeException e){
             //expected
         }

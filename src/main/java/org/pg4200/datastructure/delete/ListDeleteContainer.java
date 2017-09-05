@@ -60,6 +60,8 @@ public class ListDeleteContainer<T> implements DeleteContainer<T> {
 
                 B is the next of A, where C is the next of B.
                 The next of B is also the "next next" of A.
+
+                - Får Pointer (.next) til å peke til et nytt objekt
              */
         }
 
