@@ -13,23 +13,14 @@ public class RingArrayQueueTest extends MyQueueTestTemplate{
         return new RingArrayQueue<>();
     }
 
-    @Test
-    public void testPeekWhileQueueIsEmpty() throws Exception {
-        try{
-            queue.peek();
-            fail();
-        }catch (RuntimeException e){
-            //expected to fail
-        }
-    }
 
-    @Test
-    public void testIfToStringReturnsString() throws Exception {
-        queue.enqueue(2);
-        queue.enqueue(6);
-        queue.enqueue(10);
-
-        System.out.println(queue.toString());
-        assertEquals("2\n6\n10\n", queue.toString());
-    }
+//    @Test
+//    public void enqueueWithLessThenCapacity() throws Exception {
+//        RingArrayQueue<Integer> arrayQueue = new RingArrayQueue<>();
+//        for (int i = 0; i < 8; i++) {
+//            arrayQueue.enqueue(i+2);
+//        }
+//        arrayQueue.print();
+//        assertEquals(java.util.Optional.of(2), arrayQueue.peek());
+//    }
 }
