@@ -155,6 +155,7 @@ public class RingArrayQueue<T> implements MyQueue<T> {
 //
 //    private boolean isFull(){
 //
+//        //TODO erstatte kode med youtube video
 //        //https://www.youtube.com/watch?v=ia__kyuwGag
 //        //if (head == tail) return false;
 //
