@@ -38,8 +38,6 @@ public class MixedSort implements MySort {
 
             merge(low, middle, high, array, buffer);
         }
-
-
     }
 
     private <T extends Comparable<T>> void bubbleSort(int low, int high, T[] array){
