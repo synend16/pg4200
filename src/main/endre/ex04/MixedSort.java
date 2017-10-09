@@ -86,6 +86,7 @@ public class MixedSort implements MySort {
             k++;
         }
 
+
         while (i <= middle){
             array[k] = buffer[i];
             k++;
