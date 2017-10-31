@@ -20,7 +20,7 @@ public class RedBlackTreeMap<K extends Comparable<K>, V> implements MyTreeBasedM
     @Override
     public void put(K key, V value) {
 
-        root = put(key, value, root);
+        root = put(key, value, root);   //vi må oppdatere verdien til root for den kan bli forandret her (rotation)
         root.is_red = false;
     }
 
